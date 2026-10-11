@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Infrastructure, DevOps &amp; Production Reliability | ZYANIX Cloud</title>
+  <meta name="description" content="Cloud infrastructure architecture, Docker containerization, CI/CD pipelines, Linux server hardening, Nginx configuration, and 24/7 monitoring by ZYANIX Cloud.">
+  <link rel="canonical" href="https://zyanxi.xyz/cloud-devops.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ZYANIX">
+  <meta property="og:title" content="ZYANIX Cloud — Infrastructure, DevOps &amp; Production Reliability">
+  <meta property="og:description" content="Infrastructure that never blinks. Linux, Docker, Nginx, Cloudflare R2, automated CI/CD and 24/7 monitoring.">
+  <meta property="og:url" content="https://zyanxi.xyz/cloud-devops.html">
+  <meta property="og:image" content="https://zyanxi.xyz/logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#f7f5f0">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Cloud Infrastructure & DevOps Services",
+    "provider": {
+      "@type": "Organization",
+      "name": "ZYANIX",
+      "url": "https://zyanxi.xyz/",
+      "logo": "https://zyanxi.xyz/logo.png"
+    },
+    "name": "ZYANIX Cloud Division",
+    "description": "Designing scalable cloud architecture, Docker containerization, Nginx reverse proxy, CI/CD deployment pipelines, and production uptime monitoring.",
+    "areaServed": "Global",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cloud & DevOps Capabilities",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Infrastructure Design" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CI/CD & Zero-Downtime Deployment" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Docker Containerization" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "24/7 Monitoring & SRE" } }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zyanxi.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Capabilities", "item": "https://zyanxi.xyz/services.html" },
+      { "@type": "ListItem", "position": 3, "name": "ZYANIX Cloud", "item": "https://zyanxi.xyz/cloud-devops.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <a class="brand" href="index.html" aria-label="ZYANIX — home">
+        <img src="logo.png" alt="ZYANIX" width="54" height="32">
+        <span class="brand-name">ZYANIX</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav id="nav-links" aria-label="Primary">
+        <div class="nav-item">
+          <a class="nav-link" href="services.html" >Capabilities <svg viewBox="0 0 10 6" fill="currentColor"><path d="M0 0l5 5 5-5z"/></svg></a>
+          <div class="nav-dropdown">
+            <a href="web-development.html"><strong>ZYANIX Web</strong><span>Websites, Web Apps &amp; E-Commerce</span></a>
+            <a href="software-engineering.html"><strong>ZYANIX Software</strong><span>SaaS, ERP &amp; Custom Systems</span></a>
+            <a href="ai-automation.html"><strong>ZYANIX AI</strong><span>AI Agents, Automation &amp; LLMs</span></a>
+            <a href="cloud-devops.html" aria-current="page"><strong>ZYANIX Cloud</strong><span>Infrastructure, CI/CD &amp; SRE</span></a>
+            <a href="cybersecurity.html"><strong>ZYANIX Security</strong><span>Audits, Hardening &amp; Cloudflare</span></a>
+            <a href="technology-consulting.html"><strong>ZYANIX Consulting</strong><span>Architecture &amp; MVP Strategy</span></a>
+          </div>
+        </div>
+        <a class="nav-link" href="process.html">How We Work</a>
+        <a class="nav-link" href="about.html">Why ZYANIX</a>
+        <a class="nav-link" href="founder.html">Founder</a>
+        <a class="nav-link" href="projects.html">Work</a>
+        <a class="nav-link" href="pricing.html">Pricing</a>
+        <a class="nav-link" href="insights.html">Insights</a>
+        <a class="nav-cta" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">/</span>
+          <a href="services.html">Capabilities</a>
+          <span class="sep">/</span>
+          <span class="current">ZYANIX Cloud</span>
+        </div>
+        <p class="eyebrow reveal"><i aria-hidden="true"></i> Division 04 · ZYANIX Cloud</p>
+        <h1 class="reveal" style="transition-delay:.08s">Infrastructure ready for<br><em>production.</em></h1>
+        <p class="page-lead reveal" style="transition-delay:.16s">Applications should not only be engineered — they must be deployed, containerized, and managed to withstand real-world production traffic with zero downtime.</p>
+        <div class="hero-actions reveal" style="margin-top:34px; transition-delay:.24s;">
+          <a class="btn btn-solid" href="contact.html">Architect Your Cloud <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="#cloud-capabilities">View DevOps Capabilities</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-band">
+      <div class="wrap stats-grid">
+        <div class="stat reveal"><strong>99.9%</strong><span>Production Target Uptime</span></div>
+        <div class="stat reveal" style="transition-delay:.07s"><strong>Zero</strong><span>Downtime Deployments</span></div>
+        <div class="stat reveal" style="transition-delay:.14s"><strong>Docker</strong><span>Immutable Containers</span></div>
+        <div class="stat reveal" style="transition-delay:.21s"><strong>SSL / TLS</strong><span>Automated Cert Renewal</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CORE CAPABILITIES ============ -->
+    <section class="section wrap" id="cloud-capabilities">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><i aria-hidden="true"></i> Cloud &amp; DevOps Capabilities</p>
+          <h2>High-availability systems<br>engineered to perform.</h2>
+        </div>
+        <p>We build streamlined deployment pipelines, hardened Linux environments, and resilient cloud storage solutions that keep your digital products operational 24/7/365.</p>
+      </div>
+
+      <div class="cap-grid-2">
+        <article class="cap-card reveal">
+          <span class="cap-num">01 / Hosting &amp; Server Architecture</span>
+          <h3>Cloud Infrastructure Design</h3>
+          <p>Complete provisioning and architecture of Linux VPS, bare-metal servers, and cloud providers (Hetzner, AWS, DigitalOcean, Linode) configured for cost-efficiency and high throughput.</p>
+          <ul>
+            <li>Linux OS hardening and SSH key-only access</li>
+            <li>UFW firewall configuration and port lockdown</li>
+            <li>Optimized kernel parameters for web traffic</li>
+            <li>Resource allocation and autoscaling roadmaps</li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal" style="transition-delay:.08s">
+          <span class="cap-num">02 / Automation</span>
+          <h3>CI/CD &amp; Zero-Downtime Deployment</h3>
+          <p>Continuous Integration and Continuous Deployment pipelines via GitHub Actions that automatically test, build, and deploy new releases without interrupting active users.</p>
+          <ul>
+            <li>Automated linting, unit testing, and Docker builds</li>
+            <li>Blue/green and rolling zero-downtime releases</li>
+            <li>Instant rollback triggers if health checks fail</li>
+            <li>Environment variable and secrets management</li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal" style="transition-delay:.16s">
+          <span class="cap-num">03 / Containerization</span>
+          <h3>Docker &amp; Reverse Proxies</h3>
+          <p>Containerize all backend services, databases, and caches into reproducible Docker containers managed by Nginx reverse proxy with gzip/Brotli compression and SSL/TLS automation.</p>
+          <ul>
+            <li>Docker Compose orchestration for multi-container apps</li>
+            <li>Nginx reverse proxy, load balancing, and rate limiting</li>
+            <li>Automated Let's Encrypt SSL/TLS renewal</li>
+            <li>Isolated container networks for security</li>
+          </ul>
+        </article>
+
+        <article class="cap-card reveal" style="transition-delay:.24s">
+          <span class="cap-num">04 / SRE &amp; Observability</span>
+          <h3>24/7 Monitoring &amp; Cloudflare R2</h3>
+          <p>Real-time uptime health checks, server metrics telemetry, and high-performance S3-compatible asset storage using Cloudflare R2 with zero egress fees.</p>
+          <ul>
+            <li>Live uptime monitoring and instant downtime alert notifications</li>
+            <li>CPU, RAM, and disk utilization telemetry dashboards</li>
+            <li>Cloudflare R2 media and user asset storage pipeline</li>
+            <li>Automated daily database backups with offsite replication</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ TECH STACK ============ -->
+    <section class="section wrap" style="border-top: 1px solid var(--line-strong);">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><i aria-hidden="true"></i> Infrastructure Stack</p>
+          <h2>Reliable DevOps tooling.</h2>
+        </div>
+        <p>We work with battle-tested cloud platforms, container technologies, and web servers.</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-group reveal">
+          <span>Operating Systems &amp; Web Servers</span>
+          <div class="chips"><i>Ubuntu Linux</i><i>Debian</i><i>Nginx</i><i>Caddy</i><i>Apache</i></div>
+        </div>
+        <div class="stack-group reveal" style="transition-delay:.08s">
+          <span>Containers &amp; Orchestration</span>
+          <div class="chips"><i>Docker</i><i>Docker Compose</i><i>Portainer</i><i>Kubernetes (k8s)</i></div>
+        </div>
+        <div class="stack-group reveal" style="transition-delay:.16s">
+          <span>Cloud &amp; Storage</span>
+          <div class="chips"><i>Cloudflare R2</i><i>AWS S3</i><i>DigitalOcean</i><i>Hetzner Cloud</i><i>Supabase Storage</i></div>
+        </div>
+        <div class="stack-group reveal" style="transition-delay:.24s">
+          <span>CI/CD &amp; Telemetry</span>
+          <div class="chips"><i>GitHub Actions</i><i>Uptime Kuma</i><i>Prometheus</i><i>Grafana</i><i>Let's Encrypt</i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ SECTION ============ -->
+    <section class="section wrap" style="border-top: 1px solid var(--line-strong);">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow"><i aria-hidden="true"></i> Frequently Asked</p>
+          <h2>Cloud &amp; DevOps FAQs</h2>
+        </div>
+        <p>Common questions on cloud migrations, hosting costs, and uptime management.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Can ZYANIX help migrate our application to a new cloud provider?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We handle end-to-end cloud migrations: setting up the destination infrastructure, containerizing the application, transferring databases with minimal cutover window, configuring DNS/SSL, and verifying full system functionality.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Why do you recommend Cloudflare R2 for file storage?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Cloudflare R2 is an S3-compatible object storage system that charges <strong>zero egress bandwidth fees</strong>. This eliminates the unpredictably high bandwidth charges typical of traditional cloud providers while delivering exceptional global download speeds.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>How do you protect servers from being overloaded during traffic spikes?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We deploy Cloudflare CDN edge caching for static assets, configure Nginx connection throttling and rate limiting, implement Redis query caching, and optimize database connections to ensure stability under heavy concurrent visitor surges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-band">
+      <div class="wrap">
+        <p class="eyebrow"><i aria-hidden="true"></i> Infrastructure &amp; DevOps</p>
+        <h2>Need rock-solid cloud<br><em>infrastructure?</em></h2>
+        <a class="cta-link" href="contact.html">Talk to ZYANIX Cloud engineers <span aria-hidden="true">↗</span></a>
+        <p class="cta-note">Let us review your server setup, deployment pipelines, and uptime monitoring strategy.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="logo.png" alt="ZYANIX" width="54" height="32">
+          <p class="foot-tagline">Innovate. Automate. Scale.</p>
+          <p class="foot-sub">A full-service technology studio for startups, SMEs and enterprises.</p>
+        </div>
+        <nav class="foot-col" aria-label="Capabilities">
+          <span>Capabilities</span>
+          <a href="web-development.html">ZYANIX Web</a>
+          <a href="software-engineering.html">ZYANIX Software</a>
+          <a href="ai-automation.html">ZYANIX AI</a>
+          <a href="cloud-devops.html">ZYANIX Cloud</a>
+          <a href="cybersecurity.html">ZYANIX Security</a>
+          <a href="technology-consulting.html">ZYANIX Consulting</a>
+        </nav>
+        <nav class="foot-col" aria-label="Company">
+          <span>Company</span>
+          <a href="about.html">Why ZYANIX</a>
+          <a href="founder.html">Founder Profile</a>
+          <a href="process.html">How We Work</a>
+          <a href="projects.html">Work &amp; GitHub</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="insights.html">Insights</a>
+        </nav>
+        <nav class="foot-col" aria-label="Connect">
+          <span>Connect</span>
+          <a href="https://www.linkedin.com/company/134694292" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/ceo_shubham/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/ceo-shubham" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="contact.html">Start a Project</a>
+        </nav>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span data-year>2026</span> ZYANIX. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

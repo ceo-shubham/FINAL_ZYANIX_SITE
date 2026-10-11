@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check script.js)",
+      "Bash(node --check contact.js)",
+      "Bash(node --check projects.js)",
+      "Bash(node --check social.js)",
+      "Bash(node --check config.js)",
+      "Bash(node *)",
+      "Bash(cd *)",
+      "Bash(E=\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" && \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=1440,7200 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\home-full.png\" \"http://127.0.0.1:8471/index.html\" 2>/dev/null; \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=1440,5600 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\services-full.png\" \"http://127.0.0.1:8471/services.html\" 2>/dev/null; \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=1440,7600 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\about-full.png\" \"http://127.0.0.1:8471/about.html\" 2>/dev/null; ls -la *.png)",
+      "Bash(E=\"/c/Program Files \\(x86\\)/Microsoft/Edge/Application/msedge.exe\" && \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=1440,2400 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\projects-full.png\" \"http://127.0.0.1:8471/projects.html\" 2>/dev/null; \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=1440,2400 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\insights-full.png\" \"http://127.0.0.1:8471/insights.html\" 2>/dev/null; \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=1440,2800 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\contact-full.png\" \"http://127.0.0.1:8471/contact.html\" 2>/dev/null; \"$E\" --headless --disable-gpu --hide-scrollbars --window-size=390,3400 --screenshot=\"D:\\\\\\\\Site\\\\\\\\tmp\\\\\\\\home-mobile.png\" \"http://127.0.0.1:8471/index.html\" 2>/dev/null; ls -la *.png)"
+    ]
+  }
+}
